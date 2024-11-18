@@ -25,6 +25,7 @@ void setup() {
   } else {
     Serial.println("MS5611 berhasil diinisialisasi.");
   }
+  ms5611.setOversampling(OSR_ULTRA_HIGH);
 }
 
 void loop() {
